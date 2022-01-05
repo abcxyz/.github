@@ -1,0 +1,27 @@
+name: 'Question'
+description: 'Ask a question'
+labels: ['question']
+body:
+- type: 'markdown'
+  attributes:
+    value: |-
+      If you think you have found a bug, please open a bug report. If you have feedback
+      for a new feature or enhancement, please open a feature request.
+
+      Please complete the form below so we can answer your question.
+
+- id: 'tldr'
+  type: 'textarea'
+  attributes:
+    label: 'TL;DR'
+    description: 'Describe what you are experiencing in 1-2 sentences.'
+  validations:
+    required: true
+
+- id: 'additional_information'
+  type: 'textarea'
+  attributes:
+    label: 'Additional Information'
+    description: 'If your question can't be answer in a few sentences, provide additional context here.'
+    render: 'markdown'
+
