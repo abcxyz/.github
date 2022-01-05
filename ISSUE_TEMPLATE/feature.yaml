@@ -1,0 +1,40 @@
+name: 'Feature request'
+description: 'File a feature request'
+labels: ['enhancement']
+body:
+- type: 'markdown'
+  attributes:
+    value: |-
+      Thanks for stopping by to let us know something could be better!
+
+      Please complete the form below so we can triage and prioritize your feature.
+
+- id: 'tldr'
+  type: 'textarea'
+  attributes:
+    label: 'TL;DR'
+    description: 'Describe the feature in 1-2 sentences.'
+  validations:
+    required: true
+
+- id: 'detailed_design'
+  type: 'textarea'
+  attributes:
+    label: 'Detailed design'
+    description: |-
+      Do you have more information about a detailed design? Are there specific
+      considerations to take? Is this feature in response to an issue you are experiencing?
+    render: 'markdown'
+
+- id: 'alternatives_considered'
+  type: 'textarea'
+  attributes:
+    label: 'Alternatives considered'
+    description: "Describe any alternative solutions or features you've considered."
+    render: 'markdown'
+
+- id: 'additional'
+  type: 'textarea'
+  attributes:
+    label: 'Additional information'
+    description: 'Is there anything else you think we should know?'
