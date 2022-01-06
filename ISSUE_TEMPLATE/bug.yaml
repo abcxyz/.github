@@ -40,7 +40,7 @@ body:
     description: |-
       Please share any relevant environment information. For instance operating
       system, language runtime versions, version of this package.
-    render: 'yaml'
+    render: 'markdown'
   validations:
     required: true
 
